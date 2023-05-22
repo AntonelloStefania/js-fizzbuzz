@@ -11,6 +11,8 @@ body{
 .background-container{
     width: 1000px;
     margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1{
@@ -18,4 +20,33 @@ h1{
     font-weight: bold;
     text-align: center;
     margin-top: 40px;
+}
+
+.square{
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+.f-b{
+    background-color: #F3DECD;
+}
+
+.fz{
+    background-color: #F3E7D7;
+}
+
+.bz{
+    background-color: #F9EEEA;
+}
+
+.n{
+    background-color: #4A2849;
+    color: white;
 }

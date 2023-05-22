@@ -1,28 +1,26 @@
 let square =document.getElementById('onscreen');
+
 for (let n=1; n<= 100; n++){
+    let content = document.createElement('div');
+    content.classList.add('square')
     
     if( (n % 3 === 0) && (n % 5 === 0) ) {
-       
-        console.log('BuzzFizz')
-        square.innerHTML += '<div>FizzBuzz</div>'
+        content.classList.add('f-b');
+        content.innerText = 'FizzBuzz'
         
     } else if( (n % 3 === 0)) {
-       
-        square.innerHTML += '<div>Fizz</div>'
-
-        console.log('Fizz')
+        content.classList.add('fz');
+        content.innerText = 'Fizz'
 
     } else  if( (n % 5 === 0 )) {
-      
-       
-       
-        console.log('Buzz')
-        square.innerHTML += '<div>Buzz</div>'
+        content.classList.add('bz');
+        content.innerText = 'Buzz'
 
     } else{
-        console.log(n)
+        content.classList.add('n');
+        content.innerText =`${n}`
        
     }
     
-
+    square.append(content)
 }
