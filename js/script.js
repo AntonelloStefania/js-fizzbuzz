@@ -1,21 +1,28 @@
+let square =document.getElementById('onscreen');
 for (let n=1; n<= 100; n++){
-    //console.log(n)
+    
     if( (n % 3 === 0) && (n % 5 === 0) ) {
-        //let n = 'Fizz'
-        //console.log('Fizz')
+       
         console.log('BuzzFizz')
-
+        square.innerHTML += '<div>FizzBuzz</div>'
+        
     } else if( (n % 3 === 0)) {
-        //let n = 'buzz'
-        console.log('Buzz')
+       
+        square.innerHTML += '<div>Fizz</div>'
+
+        console.log('Fizz')
 
     } else  if( (n % 5 === 0 )) {
+      
        
-       // console.log('BuzzFizz')
-        console.log('Fizz')
+       
+        console.log('Buzz')
+        square.innerHTML += '<div>Buzz</div>'
 
     } else{
         console.log(n)
+       
     }
+    
 
 }
